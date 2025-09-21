@@ -1,0 +1,71 @@
+:root{
+  --bg: #f7f7fb;
+  --card: #ffffff;
+  --text: #222;
+  --accent: #4f46e5;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+  padding:24px;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:24px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.logo{
+  width:44px;height:44px;border-radius:8px;
+  background:linear-gradient(135deg,#7c3aed,#06b6d4);
+  display:flex;align-items:center;justify-content:center;
+  color:white;font-weight:700;
+}
+nav a{
+  margin-left:12px;
+  text-decoration:none;color:var(--text);opacity:.8;
+  font-size:14px;
+}
+.container{
+  max-width:900px;
+  margin:0 auto;
+}
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(16,24,40,0.06);
+  margin-bottom:16px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:16px;
+}
+h1{margin:0 0 8px 0;font-size:20px}
+p{margin:0 0 12px 0}
+.btn{
+  display:inline-block;padding:10px 14px;border-radius:8px;
+  background:var(--accent);color:white;text-decoration:none;
+  cursor:pointer;border:none;font-weight:600;
+}
+footer{margin-top:18px;text-align:center;color:#666;font-size:13px}
+/* responsive */
+@media (max-width:760px){
+  .grid{grid-template-columns:1fr}
+  nav{display:none}
+}
+input, textarea{
+  width:100%;padding:8px;border-radius:8px;border:1px solid #e6e6ef;
+  font-size:14px;
+}

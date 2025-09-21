@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Halaman Sederhana</title>
+
+  <!-- Link ke CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">YA</div>
+        <div>
+          <strong>SimpleSite</strong><br>
+          <small style="opacity:.7">Contoh halaman HTML sederhana</small>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card" id="home">
+        <h1>Selamat datang!</h1>
+        <p>Ini contoh halaman HTML sederhana dengan sedikit gaya dan interaksi JavaScript. Cocok untuk belajar atau dijadikan template dasar.</p>
+        <button class="btn" id="greetBtn">Klik untuk sapaan</button>
+      </section>
+
+      <div class="grid">
+        <section class="card" id="about">
+          <h1>Tentang</h1>
+          <p>Halaman ini menunjukkan struktur dasar: header, konten, sidebar, form, dan footer. Edit sesuai kebutuhanmu!</p>
+
+          <h3>Fitur singkat</h3>
+          <ul>
+            <li>Tata letak responsif sederhana</li>
+            <li>Form kontak (tidak mengirim apa-apa — hanya demo)</li>
+            <li>Tombol sapaan menggunakan JavaScript</li>
+          </ul>
+        </section>
+
+        <aside class="card" id="contact">
+          <h1>Kontak</h1>
+          <p>Isi form di bawah lalu klik "Kirim" (demo).</p>
+
+          <form id="contactForm" onsubmit="return false;">
+            <label for="name">Nama</label><br>
+            <input id="name" type="text" placeholder="Nama kamu" required><br><br>
+
+            <label for="message">Pesan</label><br>
+            <textarea id="message" rows="5" placeholder="Tulis pesan..." required></textarea><br><br>
+
+            <button class="btn" id="sendBtn">Kirim</button>
+          </form>
+        </aside>
+      </div>
+
+      <footer class="card">
+        <small>© <span id="year"></span> SimpleSite — dibuat untuk belajar.</small>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Link ke JS -->
+  <script src="script.js"></script>
+</body>
+</html>
